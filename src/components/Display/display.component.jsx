@@ -1,11 +1,7 @@
 import propTypes from 'prop-types';
+import './display.styles.css';
 
-const Display = props => {
-  const { result } = props;
-  return (
-    <div>{result}</div>
-  );
-};
+const Display = ({ result }) => <div className="result">{result}</div>;
 
 Display.propTypes = {
   result: propTypes.string,

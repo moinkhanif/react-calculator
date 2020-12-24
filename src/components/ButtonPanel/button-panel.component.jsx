@@ -1,4 +1,5 @@
 import Button from '../Button/button.component';
+import './button-panel.styles.css';
 
 const ButtonPanel = () => {
   const groups = {
@@ -12,7 +13,7 @@ const ButtonPanel = () => {
   return (
     <div className="groups">
       { Object.keys(groups).map((group, i) => (
-        <div key={keys[i]} className="group">
+        <div key={keys[i]} className={`group ${group}`}>
           {groups[group].map((name, j) => <Button key={keys[j]} name={name} />)}
         </div>
       )) }
