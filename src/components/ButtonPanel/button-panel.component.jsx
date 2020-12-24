@@ -1,3 +1,5 @@
+import Button from '../Button/button.component';
+
 const ButtonPanel = () => {
   const groups = {
     group1: ['AC', '+/-', '%', '÷'],
@@ -6,8 +8,15 @@ const ButtonPanel = () => {
     group4: ['1', '2', '3', '+'],
     group5: ['0', '.', '='],
   };
+  const keys = [0, 1, 2, 3, 4];
   return (
-    <div>Hi</div>
+    <div className="groups">
+      { Object.keys(groups).map((group, i) => (
+        <div key={keys[i]} className="group">
+          {groups[group].map((name, j) => <Button key={keys[j]} name={name} />)}
+        </div>
+      )) }
+    </div>
   );
 };
 
