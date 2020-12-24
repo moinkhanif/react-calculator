@@ -1,6 +1,6 @@
 import './App.css';
-import Display from './components/Display/display.component';
-import ButtonPanel from './components/ButtonPanel/button-panel.component';
+import Display from '../Display/display.component';
+import ButtonPanel from '../ButtonPanel/button-panel.component';
 
 const App = () => (
   <div className="main-container">
