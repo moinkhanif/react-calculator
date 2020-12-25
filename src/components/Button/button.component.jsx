@@ -1,10 +1,14 @@
 import propTypes from 'prop-types';
 import './button.styles.css';
 
+const handleClick = e => {
+  e.target.classList.add('sel');
+};
+
 const Button = props => {
   const { name } = props;
   return (
-    <button type="button" className="calculator-key">{ name }</button>
+    <button type="button" onClick={handleClick} className="calculator-key">{ name }</button>
   );
 };
 
