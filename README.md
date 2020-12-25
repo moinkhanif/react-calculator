@@ -1,5 +1,10 @@
 # React calculator
 
+[![Contributors][contributors-shield]][contributors-url]
+[![Forks][forks-shield]][forks-url]
+[![Stargazers][stars-shield]][stars-url]
+[![Issues][issues-shield]][issues-url]
+
 A simple calculator which utilizes big.js to calculate precise results of given argument's. This project is developed using react and bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Milestones covered
@@ -22,7 +27,7 @@ Basic project setup, which features the following:
 
 ### Milestone Two
 
->Status: Awaiting approval
+>Status: Complete
 
 This features the following:
 
@@ -42,7 +47,14 @@ Ensuring to create MVP(Minimum Viable Product)
 
 ### Milestone Four
 
->Status: Pending
+>Status: Awaiting approval
+
+Creating logic component and implementing calculate and operate modules.
+
+## Live demo link
+
+- Project Links
+  - Production link: [Production link](https://mk-react-calculator.herokuapp.com/)
 
 ## Available Scripts
 
@@ -70,3 +82,25 @@ The build is minified and the filenames include the hashes.\
 Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+
+## Technologies Used
+
+- This project utilizes the React.
+
+## Contributors
+
+- Moin Khan
+  - LinkedIn : [@MoinKhanIF](https://www.linkedin.com/in/moinkhanif/)
+  - Personal Website: [MoinKhanIF.dev](https://moinkhanif.dev)
+  - Twitter: [@MoinKhanIF](https://twitter.com/MoinKhanIF)
+
+<!-- MARKDOWN LINKS & IMAGES -->
+
+[contributors-shield]: https://img.shields.io/github/contributors/moinkhanif/react-calculator.svg?style=flat-square
+[contributors-url]: https://github.com/moinkhanif/react-calculator/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/moinkhanif/react-calculator.svg?style=flat-square
+[forks-url]: https://github.com/moinkhanif/react-calculator/network/members
+[stars-shield]: https://img.shields.io/github/stars/moinkhanif/react-calculator.svg?style=flat-square
+[stars-url]: https://github.com/moinkhanif/react-calculator/stargazers
+[issues-shield]: https://img.shields.io/github/issues/moinkhanif/react-calculator.svg?style=flat-square
+[issues-url]: https://github.com/moinkhanif/react-calculator/issues
