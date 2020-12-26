@@ -4,8 +4,10 @@ import './display.styles.css';
 const Display = ({ result, next, operation }) => {
   if (result && operation && next) {
     return <div className="result">{`${result} ${operation} ${next}`}</div>;
-  } if (result && operation && operation !== '=') {
+  } if (result && operation && (operation !== '=' && operation !== '%')) {
     return <div className="result">{`${result} ${operation}`}</div>;
+  } if (result && result.includes('Error')) {
+    return <div className="result error">{result}</div>;
   } if (result || result === '-0') {
     return <div className="result">{result}</div>;
   } if (result === null && operation === '%') {

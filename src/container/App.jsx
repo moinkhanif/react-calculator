@@ -1,9 +1,8 @@
-/* eslint-disable react/destructuring-assignment */
 import './App.css';
 import { Component } from 'react';
-import Display from '../Display/display.component';
-import ButtonPanel from '../ButtonPanel/button-panel.component';
-import calculate from '../logic/calculate';
+import Display from '../components/Display/display.component';
+import ButtonPanel from '../components/ButtonPanel/button-panel.component';
+import calculate from '../components/logic/calculate';
 
 class App extends Component {
   constructor() {

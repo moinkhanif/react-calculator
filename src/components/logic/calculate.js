@@ -27,7 +27,7 @@ const calculate = (calculatorData, buttonName) => {
     }
   }
 
-  if (buttonName === '=' && operation && (next || operation === '%')) {
+  if (buttonName === '=' && operation && next) {
     if (total === null) {
       total = '0';
     }
@@ -74,6 +74,19 @@ const calculate = (calculatorData, buttonName) => {
   }
 
   if (OPERATIONS.includes(buttonName)) {
+    if (buttonName === '%') {
+      if (total && operation && next) {
+        total = operate(total, next, operation);
+        next = null;
+      } else if (total === null) {
+        total = '0';
+      }
+      operation = '%';
+      total = operate(total, next, operation);
+    }
+    if (total.includes('Error')) {
+      total = '0';
+    }
     operation = buttonName;
   }
   const newData = { total, next, operation };

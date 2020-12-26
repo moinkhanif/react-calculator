@@ -4,3 +4,7 @@
   text-align: right;
   background-color: #205b7a;
 }
+
+.result.error {
+  background-color: rgb(184, 76, 76);
+}

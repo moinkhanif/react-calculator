@@ -1,9 +1,11 @@
+import propTypes from 'prop-types';
 import Button from '../Button/button.component';
 import './button-panel.styles.css';
 
-const handleClick = ({ clickHandler }) => clickHandler;
+const handleClick = clickHandler => clickHandler;
 
 const ButtonPanel = props => {
+  const { clickHandler } = props;
   const groups = {
     group1: ['AC,Clear', '+/-,plus/minus sign', '%,percent', '÷,divide'],
     group2: ['7', '8', '9', 'X,multiply'],
@@ -25,7 +27,7 @@ const ButtonPanel = props => {
               }
               return (
                 <Button
-                  clickHandler={handleClick(props)}
+                  clickHandler={handleClick(clickHandler)}
                   key={keys[j]}
                   name={buttonName}
                   title={title}
@@ -36,6 +38,10 @@ const ButtonPanel = props => {
       )) }
     </div>
   );
+};
+
+ButtonPanel.propTypes = {
+  clickHandler: propTypes.func.isRequired,
 };
 
 export default ButtonPanel;
