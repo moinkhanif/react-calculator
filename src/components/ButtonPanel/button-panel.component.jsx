@@ -5,7 +5,7 @@ const handleClick = ({ clickHandler }) => clickHandler;
 
 const ButtonPanel = props => {
   const groups = {
-    group1: ['AC', '+/-', '%', '÷'],
+    group1: ['AC,Clear', '+/-', '%', '÷'],
     group2: ['7', '8', '9', 'X'],
     group3: ['4', '5', '6', '-'],
     group4: ['1', '2', '3', '+'],
@@ -17,13 +17,21 @@ const ButtonPanel = props => {
       { Object.keys(groups).map((group, i) => (
         <div key={keys[i]} className={`group ${group}`}>
           {groups[group]
-            .map((name, j) => (
-              <Button
-                clickHandler={handleClick(props)}
-                key={keys[j]}
-                name={name}
-              />
-            ))}
+            .map((name, j) => {
+              let title;
+              let buttonName = name;
+              if (name.includes(',')) {
+                [buttonName, title] = name.split(',');
+              }
+              return (
+                <Button
+                  clickHandler={handleClick(props)}
+                  key={keys[j]}
+                  name={buttonName}
+                  title={title}
+                />
+              );
+            })}
         </div>
       )) }
     </div>

@@ -1,4 +1,6 @@
 .result {
+  font-size: 1.4rem;
   padding: 20px;
   text-align: right;
+  background-color: #205b7a;
 }
