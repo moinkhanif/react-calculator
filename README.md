@@ -47,9 +47,13 @@ Ensuring to create MVP(Minimum Viable Product)
 
 ### Milestone Four
 
->Status: Awaiting approval
+>Status: Complete
 
 Creating logic component and implementing calculate and operate modules.
+
+### Milestone Five
+
+>Status: Pending
 
 ## Live demo link
 

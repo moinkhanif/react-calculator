@@ -1,29 +1,30 @@
 import Big from 'big.js';
 
 const operate = (numberOne, numberTwo, operation) => {
-  const one = new Big(numberOne);
-  const two = new Big(numberTwo);
+  const one = new Big(parseFloat(numberOne, 10));
+  const two = numberTwo ? new Big(parseFloat(numberTwo, 10)) : null;
+
   let result;
   switch (operation) {
     case '+':
-      result = one.add(two);
+      result = one.add(two).toFixed(4);
       break;
     case '-':
-      result = one.sub(two);
+      result = one.sub(two).toFixed(4);
       break;
     case 'X':
-      result = one.mul(two);
+      result = one.mul(two).toFixed(4);
       break;
     case '÷':
-      result = one.div(two);
+      result = one.div(two).toFixed(4);
       break;
     case '%':
-      result = one.div(100);
+      result = one.div(100).toFixed(4);
       break;
     default:
       break;
   }
-  return result;
+  return `${parseFloat(result)}`;
 };
 
 export default operate;
