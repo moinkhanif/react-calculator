@@ -5,11 +5,11 @@ const handleClick = ({ clickHandler }) => clickHandler;
 
 const ButtonPanel = props => {
   const groups = {
-    group1: ['AC,Clear', '+/-', '%', '÷'],
-    group2: ['7', '8', '9', 'X'],
-    group3: ['4', '5', '6', '-'],
-    group4: ['1', '2', '3', '+'],
-    group5: ['0', '.', '='],
+    group1: ['AC,Clear', '+/-,plus/minus sign', '%,percent', '÷,divide'],
+    group2: ['7', '8', '9', 'X,multiply'],
+    group3: ['4', '5', '6', '-,subtract'],
+    group4: ['1', '2', '3', '+,add'],
+    group5: ['0', '.,point', '=,equals to'],
   };
   const keys = [0, 1, 2, 3, 4];
   return (
