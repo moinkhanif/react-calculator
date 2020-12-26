@@ -28,6 +28,9 @@ const calculate = (calculatorData, buttonName) => {
   }
 
   if (buttonName === '=' && operation && (next || operation === '%')) {
+    if (total === null) {
+      total = '0';
+    }
     total = operate(total, next, operation);
     next = null;
     operation = '=';

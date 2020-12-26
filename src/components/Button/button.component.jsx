@@ -1,16 +1,17 @@
 import propTypes from 'prop-types';
 import './button.styles.css';
 
+const handleClick = props => props.clickHandler;
+
 const Button = props => {
-  const { name, clickHandler } = props;
+  const { name } = props;
   return (
-    <button type="button" onClick={clickHandler} className="calculator-key">{ name }</button>
+    <button type="button" onClick={handleClick(props)} className="calculator-key">{ name }</button>
   );
 };
 
 Button.propTypes = {
   name: propTypes.string,
-  clickHandler: propTypes.func.isRequired,
 };
 
 Button.defaultProps = {

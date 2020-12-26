@@ -10,17 +10,13 @@ class App extends Component {
     super();
     this.state = {
       total: null,
-      // eslint-disable-next-line react/no-unused-state
       next: null,
-      // eslint-disable-next-line react/no-unused-state
       operation: null,
     };
   }
 
   handleClick = buttonName => {
     const name = buttonName.target.textContent;
-    // const { next, operation } = this.state;
-    // console.log(name, next, operation);
     this.setState(state => calculate(state, name));
   }
 
