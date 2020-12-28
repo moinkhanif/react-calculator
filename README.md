@@ -5,6 +5,8 @@
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
 
+![React Calculator](./readme-screenshot.png)
+
 A simple calculator which utilizes big.js to calculate precise results of given argument's. This project is developed using react and bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Milestones covered
@@ -47,14 +49,31 @@ Ensuring to create MVP(Minimum Viable Product)
 
 ### Milestone Four
 
->Status: Awaiting approval
+>Status: Complete
 
 Creating logic component and implementing calculate and operate modules.
+
+### Milestone Five
+
+>Status: Complete
+
+This milestone features:
+
+- Connecting calculate and operate logic with frontend
+- Optimizing calculate and operate modules
+- Styling components
 
 ## Live demo link
 
 - Project Links
   - Production link: [Production link](https://mk-react-calculator.herokuapp.com/)
+
+## Setting up the app locally
+
+- Clone this repository in your local system. [info](https://docs.github.com/en/free-pro-team@latest/github/creating-cloning-and-archiving-repositories/cloning-a-repository)
+- Open the terminal and navigate to this cloned repository.
+  - Run `npm install` command to install all the dependencies.
+  - Run `npm start` to start development server. A browser window should open at this point.
 
 ## Available Scripts
 
