@@ -87,7 +87,7 @@ const calculate = (calculatorData, buttonName) => {
       operation = '%';
       total = operate(total, next, operation);
     }
-    if (total.includes('Error')) {
+    if (!total || total.includes('Error')) {
       total = '0';
     }
     if (total.charAt(total.length - 1) === '.') {
