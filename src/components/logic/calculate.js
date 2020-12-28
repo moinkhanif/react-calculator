@@ -59,13 +59,16 @@ const calculate = (calculatorData, buttonName) => {
     case '.':
       if (operation && operation !== '%') {
         if (!next) {
-          next = '0.';
+          next = '0';
+          if (operation === '=') {
+            operation = null;
+          }
         } if (next % 1 === 0) {
           next += '.';
         }
       } else if (!total) {
         total = '0.';
-      } else if (total % 1 === 0) {
+      } else if (total % 1 === 0 && !total.includes('.')) {
         total += '.';
       }
       break;
@@ -86,6 +89,9 @@ const calculate = (calculatorData, buttonName) => {
     }
     if (total.includes('Error')) {
       total = '0';
+    }
+    if (total.charAt(total.length - 1) === '.') {
+      total += '0';
     }
     operation = buttonName;
   }
