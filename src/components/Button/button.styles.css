@@ -1,13 +1,10 @@
 .calculator-key {
   cursor: pointer;
   font-size: 1.3rem;
-  color: aliceblue;
-  background-color: #142f44;
-  border: 1px solid #000;
+  color: #000;
+  border: 1px solid rgba(0, 0, 0, 0.171);
 }
 
-.calculator-key:hover,
-.calculator-key:focus {
-  background-color: #142f44b4;
-  outline: #000;
+.calculator-key:last-child {
+  background-color: #f5913e;
 }
