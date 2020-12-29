@@ -31,6 +31,7 @@ const ButtonPanel = props => {
                   key={keys[j]}
                   name={buttonName}
                   title={title}
+                  wide={buttonName === '0'}
                 />
               );
             })}
