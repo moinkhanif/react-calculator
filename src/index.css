@@ -5,3 +5,19 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+@media Screen and (max-width: 784px) {
+  header {
+    flex-direction: column;
+  }
+}
+
+@media Screen and (max-width: 463px) {
+  header .logo {
+    font-size: 2rem;
+  }
+
+  header a {
+    padding: 5px 15px;
+  }
+}
