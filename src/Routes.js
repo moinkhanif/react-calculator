@@ -1,14 +1,16 @@
 import React from 'react';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import Header from './container/Header/Header';
-import App from './container/App/App';
+import Home from './container/Home/Home';
 
 const Routes = () => (
   <BrowserRouter>
     <Header />
-    <Switch>
-      <Route path="/" component={App} />
-    </Switch>
+    <main>
+      <Switch>
+        <Route path="/" component={Home} />
+      </Switch>
+    </main>
   </BrowserRouter>
 );
 
