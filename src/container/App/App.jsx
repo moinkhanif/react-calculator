@@ -1,9 +1,9 @@
 import './App.css';
 import { useState } from 'react';
-import Heading from '../components/Heading/heading.component';
-import Display from '../components/Display/display.component';
-import ButtonPanel from '../components/ButtonPanel/button-panel.component';
-import calculate from '../components/logic/calculate';
+import Heading from '../../components/Heading/heading.component';
+import Display from '../../components/Display/display.component';
+import ButtonPanel from '../../components/ButtonPanel/button-panel.component';
+import calculate from '../../components/logic/calculate';
 
 const App = () => {
   const [state, setState] = useState({
