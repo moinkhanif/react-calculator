@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap');
+
+/* Color Pallet used: https://colorhunt.co/palette/226544 */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0 20px;
+}
+
+header .logo {
+  font-size: 3rem;
+  font-family: 'Quicksand', sans-serif;
+  color: #9f5f80;
+}
+
+header ul li {
+  display: inline-block;
+}
+
+header a {
+  text-decoration: none;
+}
+
+header li a {
+  color: #ff8e71;
+  padding: 10px 30px;
+  font-size: 1.1rem;
+}
+
+header a:hover {
+  color: #ffba93;
+}

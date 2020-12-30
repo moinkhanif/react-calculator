@@ -1,9 +1,8 @@
 import './App.css';
 import { useState } from 'react';
-import Heading from '../components/Heading/heading.component';
-import Display from '../components/Display/display.component';
-import ButtonPanel from '../components/ButtonPanel/button-panel.component';
-import calculate from '../components/logic/calculate';
+import Display from '../../components/Display/display.component';
+import ButtonPanel from '../../components/ButtonPanel/button-panel.component';
+import calculate from '../../components/logic/calculate';
 
 const App = () => {
   const [state, setState] = useState({
@@ -21,7 +20,6 @@ const App = () => {
 
   return (
     <div className="main-container">
-      <Heading />
       <Display result={total} next={next} operation={operation} />
       <ButtonPanel clickHandler={handleClick} />
     </div>

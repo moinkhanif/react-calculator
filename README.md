@@ -1,4 +1,4 @@
-# React calculator
+# React calculator/ Math Magicians
 
 [![Contributors][contributors-shield]][contributors-url]
 [![Forks][forks-shield]][forks-url]
@@ -8,60 +8,6 @@
 ![React Calculator](./readme-screenshot.png)
 
 A simple calculator which utilizes big.js to calculate precise results of given argument's. This project is developed using react and bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Milestones covered
-
-The React app is based on some milestones and simple functional and technical requirements :
-
-### Milestone One
-
->Status: Complete
-
-Basic project setup, which features the following:
-
-- Initializing react-calculator project
-- Removing default assets
-- Adding:
-  - Linter files
-  - big.js
-  - prop-types
-- Deploying to Heroku
-
-### Milestone Two
-
->Status: Complete
-
-This features the following:
-
-- Creating these components:
-  - Display
-  - ButtonPanel
-  - Button
-- Passed the required props to Display and Button components
-- Configuring ButtonPanel to render respective buttons
-- Styling the components
-
-### Milestone Three
-
->Status: Complete
-
-Ensuring to create MVP(Minimum Viable Product)
-
-### Milestone Four
-
->Status: Complete
-
-Creating logic component and implementing calculate and operate modules.
-
-### Milestone Five
-
->Status: Complete
-
-This milestone features:
-
-- Connecting calculate and operate logic with frontend
-- Optimizing calculate and operate modules
-- Styling components
 
 ## Live demo link
 
