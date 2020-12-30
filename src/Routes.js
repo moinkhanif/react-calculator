@@ -1,5 +1,6 @@
 import React from 'react';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import Calculator from './container/Calculator/Calculator';
 import Header from './container/Header/Header';
 import Home from './container/Home/Home';
 
@@ -8,7 +9,8 @@ const Routes = () => (
     <Header />
     <main>
       <Switch>
-        <Route path="/" component={Home} />
+        <Route exact path="/" component={Home} />
+        <Route path="/calculator" component={Calculator} />
       </Switch>
     </main>
   </BrowserRouter>

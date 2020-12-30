@@ -9,20 +9,38 @@
 #root {
   padding: 0 20px;
   font-family: Arial, Helvetica, sans-serif;
+  max-width: 1024px;
+  margin: auto;
 }
 
 @media Screen and (max-width: 784px) {
   header {
     flex-direction: column;
   }
+
+  .calculator-container {
+    flex-direction: column;
+  }
+
+  .calculator-container h1 {
+    margin: 20px 0;
+  }
+
+  #root .calculator-container .main-container {
+    width: 100%;
+  }
 }
 
 @media Screen and (max-width: 463px) {
-  header .logo {
+  header > .logo {
     font-size: 2rem;
   }
 
-  header a {
-    padding: 5px 15px;
+  header ul li {
+    margin-top: 20px;
+  }
+
+  header ul li a {
+    padding: 0 10px;
   }
 }
