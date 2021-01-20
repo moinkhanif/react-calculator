@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders learn react link 1`] = `
+<blockquote
+  id="quote"
+>
+  Test Quote -Testie
+  <span>
+    - undefined
+  </span>
+</blockquote>
+`;
