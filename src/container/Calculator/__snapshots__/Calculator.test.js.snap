@@ -1,0 +1,186 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders learn react link 1`] = `
+<div
+  className="calculator-container"
+>
+  <h1>
+    Lets do some math!
+  </h1>
+  <div
+    className="main-container"
+  >
+    <div
+      className="result"
+    >
+      0
+    </div>
+    <div
+      className="groups"
+    >
+      <div
+        className="group group1"
+      >
+        <button
+          className="calculator-key false orange"
+          onClick={[Function]}
+          title="Clear"
+          type="button"
+        >
+          AC
+        </button>
+        <button
+          className="calculator-key false orange"
+          onClick={[Function]}
+          title="plus/minus sign"
+          type="button"
+        >
+          +/-
+        </button>
+        <button
+          className="calculator-key false orange"
+          onClick={[Function]}
+          title="percent"
+          type="button"
+        >
+          %
+        </button>
+        <button
+          className="calculator-key false orange"
+          onClick={[Function]}
+          title="divide"
+          type="button"
+        >
+          ÷
+        </button>
+      </div>
+      <div
+        className="group group2"
+      >
+        <button
+          className="calculator-key false orange"
+          onClick={[Function]}
+          type="button"
+        >
+          7
+        </button>
+        <button
+          className="calculator-key false orange"
+          onClick={[Function]}
+          type="button"
+        >
+          8
+        </button>
+        <button
+          className="calculator-key false orange"
+          onClick={[Function]}
+          type="button"
+        >
+          9
+        </button>
+        <button
+          className="calculator-key false orange"
+          onClick={[Function]}
+          title="multiply"
+          type="button"
+        >
+          X
+        </button>
+      </div>
+      <div
+        className="group group3"
+      >
+        <button
+          className="calculator-key false orange"
+          onClick={[Function]}
+          type="button"
+        >
+          4
+        </button>
+        <button
+          className="calculator-key false orange"
+          onClick={[Function]}
+          type="button"
+        >
+          5
+        </button>
+        <button
+          className="calculator-key false orange"
+          onClick={[Function]}
+          type="button"
+        >
+          6
+        </button>
+        <button
+          className="calculator-key false orange"
+          onClick={[Function]}
+          title="subtract"
+          type="button"
+        >
+          -
+        </button>
+      </div>
+      <div
+        className="group group4"
+      >
+        <button
+          className="calculator-key false orange"
+          onClick={[Function]}
+          type="button"
+        >
+          1
+        </button>
+        <button
+          className="calculator-key false orange"
+          onClick={[Function]}
+          type="button"
+        >
+          2
+        </button>
+        <button
+          className="calculator-key false orange"
+          onClick={[Function]}
+          type="button"
+        >
+          3
+        </button>
+        <button
+          className="calculator-key false orange"
+          onClick={[Function]}
+          title="add"
+          type="button"
+        >
+          +
+        </button>
+      </div>
+      <div
+        className="group group5"
+      >
+        <button
+          className="calculator-key true orange"
+          onClick={[Function]}
+          type="button"
+        >
+          0
+        </button>
+        <button
+          className="calculator-key false orange"
+          onClick={[Function]}
+          title="point"
+          type="button"
+        >
+          .
+        </button>
+        <button
+          className="calculator-key false orange"
+          onClick={[Function]}
+          title="equals to"
+          type="button"
+        >
+          =
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+`;
