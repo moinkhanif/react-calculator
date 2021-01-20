@@ -84,4 +84,38 @@ describe('calculate', () => {
       expect(calculate({ total: '0.001', next: null, operation: null }, '%')).toEqual({ next: null, operation: '%', total: '0' });
     });
   });
+
+  describe('AC', () => {
+    it('clears total, next, and operation', () => {
+      expect(calculate({ total: '100', next: '100', operation: null }, 'AC')).toEqual({ next: null, operation: null, total: null });
+    });
+  });
+
+  describe('=', () => {
+    it('doesn\'t do any operation when total, next, or operation are null', () => {
+      expect(calculate({ total: '100', next: null, operation: null }, '=')).toEqual({ next: null, operation: null, total: '100' });
+    });
+
+    it('performs operations when total, next, and operation are not null', () => {
+      expect(calculate({ total: '100', next: '100', operation: '+' }, '=')).toEqual({ next: null, operation: '=', total: '200' });
+    });
+  });
+
+  describe('. operator', () => {
+    it('adds decimal point to total when operator and next are undefined', () => {
+      expect(calculate({ total: '100', next: null, operation: null }, '.')).toEqual({ next: null, operation: null, total: '100.' });
+    });
+
+    it('doesn\'t do any operation when total already has decimal point', () => {
+      expect(calculate({ total: '100.', next: null, operation: null }, '.')).toEqual({ next: null, operation: null, total: '100.' });
+    });
+
+    it('adds decimal point to next when operator and total are undefined', () => {
+      expect(calculate({ total: '100', next: '10', operation: '+' }, '.')).toEqual({ next: '10.', operation: '+', total: '100' });
+    });
+
+    it('doesn\'t do any operation when next already has decimal point', () => {
+      expect(calculate({ total: '100', next: '10.', operation: '+' }, '.')).toEqual({ next: '10.', operation: '+', total: '100' });
+    });
+  });
 });

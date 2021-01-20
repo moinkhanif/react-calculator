@@ -63,7 +63,7 @@ const calculate = (calculatorData, buttonName) => {
           if (operation === '=') {
             operation = null;
           }
-        } if (next % 1 === 0) {
+        } if (next % 1 === 0 && !next.includes('.')) {
           next += '.';
         }
       } else if (!total) {
